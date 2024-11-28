@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Furkan Arşiv Haber - Anasayfa" />
+    <meta name="keywords" content="Furkan, Arşiv, Haber, Anasayfa" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anasayfa - Furkan Arşiv Haber</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script>
+      const loggedInUser = sessionStorage.getItem("loggedInUser");
+      if (!loggedInUser) {
+        window.location.replace("login.html");
+      }
+    </script>
+  </head>
+
+  <body>
+    <header class="news-header">
+      <div class="header-container">
+        <h1>Furkan Arşiv Haber</h1>
+        <button id="logoutButton">Çıkış Yap</button>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html" class="active">Anasayfa</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li><a href="account.html" id="accountLink">Hesap Yönetimi</a></li>
+      </ul>
+    </nav>
+
+    <main class="news-main">
+      <section class="featured-article">
+        <img src="./images/lightning.jpg" alt="Öne Çıkan Haber" />
+        <div class="article-content">
+          <h2>Metallica'nın Münih'teki konserinde yıldırım çarptı</h2>
+          <p>
+            24 Mayıs 2024'te Metallica'nın Münih'teki Olympiastadion'da verdiği
+            konser sırasında bir fırtına, grubun "Master of Puppets" şarkısını
+            çaldığı anlarda dramatik bir arka plan oluşturdu. İkonik parçaya
+            başladıkları anda yıldırım çaktı ve bu, katılımcılar için unutulmaz
+            bir an yarattı.
+          </p>
+          <a href="article_featured.html" class="read-more">Devamını oku</a>
+        </div>
+      </section>
+
+      <section class="article-list">
+        <article class="news-article">
+          <img src="./images/oppenheimer.jpg" alt="Haber Görseli" />
+          <h3>Oppenheimer nihayet Japonya'da vizyona giriyor</h3>
+          <p>
+            Christopher Nolan'ın eleştirmenlerce beğenilen filmi Oppenheimer,
+            Temmuz ayında gerçekleşen ilk global gösteriminin ardından, 2024
+            yılında Japonya'da sinemalarda gösterime girecek. Kesin çıkış tarihi
+            henüz açıklanmasa da yerel dağıtıcı Bitters End, yaptığı açıklamada
+            bu kararın “filmin konusu etrafındaki hassasiyetleri ele almak için
+            yapılan aylarca süren dikkatli diyalogların” ardından alındığını
+            belirtti. Bu gecikme, Japonya'nın filmde tasvir edilen olaylarla,
+            özellikle 1945'teki Hiroşima ve Nagazaki'ye yapılan atom bombası
+            saldırılarıyla olan tarihi bağını yansıtıyor.
+          </p>
+          <a href="article1.html" class="read-more">Devamını oku</a>
+        </article>
+        <article class="news-article">
+          <img src="./images/pep-guardiola.webp" alt="Haber Görseli" />
+          <h3>
+            "Belki de dört mağlubiyetten dolayı oldu." - Guardiola sözleşmesini
+            uzattı
+          </h3>
+          <p>
+            Manchester City teknik direktörü Pep Guardiola, teknik direktörlük
+            kariyerinde ilk kez dört maç üst üste kaybettikten sonra kulüpten
+            ayrılamayacağını söyledi. Guardiola, City ile olan sözleşmesini 2027
+            yılına kadar uzatarak iki yıllık yeni bir anlaşmaya imza attı.
+          </p>
+          <a href="article2.html" class="read-more">Devamını oku</a>
+        </article>
+        <article class="news-article">
+          <img src="./images/bitcoin.jpg" alt="Haber Görseli" />
+          <h3>
+            Bitcoin, ABD seçimlerinin ardından devam eden yükselişle 100.000
+            dolara daha da yaklaşıyor.
+          </h3>
+          <p>
+            NEW YORK (AP) — Bitcoin, 99.000 dolar seviyesini ilk kez aşarak yeni
+            bir rekor kırdı ve dikkat çekici yükselişini sürdürdü. Bu kilometre
+            taşı, son iki haftada %40'tan fazla değer kazanan kripto para birimi
+            için önemli bir anı işaret ediyor ve dijital varlıkların öngörülemez
+            ve hızlı yükselişlerini bir kez daha ortaya koyuyor. Şimdi, Bitcoin
+            100.000 dolar sınırına ulaşmaya çok yakın.
+          </p>
+          <a href="article3.html" class="read-more">Devamını oku</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="news-footer">
+      <p>&copy; 2024 Furkan Arşiv Haber. Tüm hakları saklıdır.</p>
+    </footer>
+  </body>
+</html>

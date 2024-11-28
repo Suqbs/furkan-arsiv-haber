@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Furkan Arşiv Haber - Kayıt Sayfası" />
+    <meta name="keywords" content="Furkan, Arşiv, Haber, Kayıt" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kayıt Ol - Furkan Arşiv Haber</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="news-header">
+      <div class="header-container">
+        <h1>Furkan Arşiv Haber</h1>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html" class="active">Anasayfa</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li><a href="account.html" id="accountLink">Hesap Yönetimi</a></li>
+      </ul>
+    </nav>
+
+    <h1>Kayıt Ol</h1>
+
+    <div class="container">
+      <form id="registerForm" aria-label="Kayıt Ol Formu">
+        <input
+          type="text"
+          id="registerUsername"
+          placeholder="Kullanıcı Adı"
+          required
+          minlength="3"
+          aria-required="true"
+        />
+        <input
+          type="password"
+          id="registerPassword"
+          placeholder="Şifre"
+          required
+          minlength="6"
+          aria-required="true"
+        />
+        <button id="registerButton" type="submit">Kayıt Ol</button>
+        <p class="message" id="registerMessage" role="alert"></p>
+      </form>
+
+      <p class="switch-form">
+        Zaten hesabınız var mı? <a href="login.html">Giriş Yap</a>
+      </p>
+    </div>
+  </body>
+</html>
