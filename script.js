@@ -163,7 +163,7 @@ function setupEventListeners() {
 
     if (document.getElementById('accountLink')) {
         if (loggedInUser) {
-            document.getElementById('accountLink').style.display = 'inline-block';
+            document.getElementById('accountLink').style.display = 'block';
         } else {
             document.getElementById('accountLink').style.display = 'none';
         }
